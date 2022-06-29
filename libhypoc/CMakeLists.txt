@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(LibHypoc C)
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -march=native")
+add_library(hypoc STATIC ./hypoc.c)
+install(TARGETS hypoc DESTINATION .)
